@@ -1,0 +1,21 @@
+NewBlogApp/                 # project root (manage.py lives here)
+│
+├── NewBlogApp/             # Django project settings
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py
+│   ├── wsgi.py
+│   └── asgi.py
+│
+├── BlogApp/               # our app
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── serializers.py
+│   ├── views.py
+│   ├── urls.py           we’ll create this for clarity
+│   └── migrations/
+│
+├── manage.py
+└── requirements.txt

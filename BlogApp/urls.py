@@ -18,7 +18,12 @@ urlpatterns = [
     path("signup/", views.signup, name="signup"),  # new route for signup
     path("login/", TokenObtainPairView.as_view(), name="token_obtain_pair"),  # JWT login
     path("token/refresh/", TokenRefreshView.as_view(), name="token_refresh"), # refresh token
-    path("posts/", views.post_list, name="post_list"),
-    path("posts/<int:pk>", views.post_detail, name="post_detail"),
+    path("createPost/", views.post_list, name="post_list"),
+    path("AllPost/", views.post_list, name="post_list"),
+    path("getSinglePost/<int:pk>", views.post_detail, name="post_detail"),
+    path("updateSinglePost/<int:pk>", views.post_detail, name="post_detail"),
+    path("deleteSinglePost/<int:pk>", views.post_detail, name="post_detail"),
     path('', views.home, name='home'), # Default Home Page 
+    path("bulkUploadPosts/", views.bulk_upload_posts, name="bulk_upload_posts"),
+
 ]
